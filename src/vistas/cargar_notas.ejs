@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga de Notas</title>
+    <link rel="stylesheet" href="/css/cargar-notas.css">
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="boletin.html">Contenido del Boletín</a></li>
+            <li><a href="info-institucion.html">Información de la Institución</a></li>
+            <li><a href="carga-notas.html">Cargar Notas</a></li>
+            <li><a href="login.html">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="carga-notas-section">
+            <h2>Cargar Notas en el Boletín</h2>
+            <form action="#" method="POST">
+                <label for="student-name">Nombre del Alumno:</label>
+                <input type="text" id="student-name" name="student-name" required>
+
+                <label for="subject">Materia:</label>
+                <select id="subject" name="subject" required>
+                    <option value="Matematica">Matemática</option>
+                    <option value="Ingles">Inglés Técnico</option>
+                    <option value="Marco">Marco Jurídico</option>
+                    <option value="Autogestion">Autogestión</option>
+                    <option value="Programacion">Programación</option>
+                    <option value="Asistencia">Asistencia</option>
+                    <option value="Redes">Redes</option>
+                    <option value="Hardware">Hardware</option>
+                    <option value="Arduino">Arduino</option>
+                    <option value="Practicas">Prácticas Profesionalizantes</option>
+                </select>
+
+                <label for="report-number">Número de Informe:</label>
+                <input type="number" id="report-number" name="report-number" min="1" max="4" required>
+
+                <label for="grade">Nota:</label>
+                <input type="number" id="grade" name="grade" min="1" max="10" required>
+
+                <button type="submit">Cargar Nota</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Instituto de Tecnología Avanzada. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
